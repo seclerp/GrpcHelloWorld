@@ -1,10 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorld.Server", "GrpcHelloWorld.Server\GrpcHelloWorld.Server.csproj", "{0022E521-3F5A-4392-959F-4E6BCF43DDBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{AB032435-8F19-4552-BDD5-63677F1CC04C}"
+ProjectSection(SolutionItems) = preProject
+	Protos\chat.proto = Protos\chat.proto
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcHelloWorld.Client", "GrpcHelloWorld.Client\GrpcHelloWorld.Client.csproj", "{97B1D05F-26B6-478C-A756-E65B5324657F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{1C23EA75-3C85-4CCD-B2AD-80136A37F1CC}"
+ProjectSection(SolutionItems) = preProject
+	Dockerfile = Dockerfile
+	.dockerignore = .dockerignore
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0022E521-3F5A-4392-959F-4E6BCF43DDBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0022E521-3F5A-4392-959F-4E6BCF43DDBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0022E521-3F5A-4392-959F-4E6BCF43DDBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0022E521-3F5A-4392-959F-4E6BCF43DDBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97B1D05F-26B6-478C-A756-E65B5324657F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97B1D05F-26B6-478C-A756-E65B5324657F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97B1D05F-26B6-478C-A756-E65B5324657F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97B1D05F-26B6-478C-A756-E65B5324657F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
