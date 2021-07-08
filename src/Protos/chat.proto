@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "GrpcHelloWorld.Protobuf";
 
-package greet;
+package grpcHelloWorld;
 
 service ChatService {
   rpc SendMessage (MessageRequest) returns (MessageReply);
